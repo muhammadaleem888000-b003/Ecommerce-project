@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - RetailFlow</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">RetailFlow</h2>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="checkout-section">
+
+        <div class="section-heading">
+            <span>ALMOST THERE</span>
+            <h2>Complete Your Order</h2>
+            <p>Enter your delivery information.</p>
+        </div>
+
+        <div class="checkout-container">
+
+            <form id="checkoutForm">
+
+                <h3>Delivery Information</h3>
+
+                <label>Full Name</label>
+                <input type="text" id="customerName" required>
+
+                <label>Email Address</label>
+                <input type="email" id="customerEmail" required>
+
+                <label>Phone Number</label>
+                <input type="tel" id="customerPhone" required>
+
+                <label>Delivery Address</label>
+                <textarea id="customerAddress" required></textarea>
+
+                <label>Payment Method</label>
+                <select id="paymentMethod" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="Cash on Delivery">
+                        Cash on Delivery
+                    </option>
+                </select>
+
+                <button type="submit">Place Order</button>
+
+            </form>
+
+            <div class="checkout-summary">
+                <h3>Order Summary</h3>
+                <p>Total Amount:</p>
+                <h2 id="checkoutTotal">Rs. 0</h2>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>© 2026 RetailFlow. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../Javascript/checkout.js"></script>
+
+</body>
+</html>

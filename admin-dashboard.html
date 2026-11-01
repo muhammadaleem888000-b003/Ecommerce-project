@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - RetailFlow</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">RetailFlow Admin</h2>
+
+            <div class="nav-buttons">
+                <button id="logoutBtn">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="admin-dashboard">
+
+        <div class="dashboard-heading">
+            <h1>Admin Dashboard</h1>
+            <p>Welcome to your store management panel.</p>
+        </div>
+
+        <section class="dashboard-cards">
+
+            <div class="dashboard-card">
+                <h3>Total Products</h3>
+                <h2>4</h2>
+                <p>Demo Products</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Total Customers</h3>
+                <h2>--</h2>
+                <p>Customer Records</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Total Orders</h3>
+                <h2 id="totalOrders">0</h2>
+                <p>Demo Orders</p>
+            </div>
+
+        </section>
+
+        <section class="admin-options">
+
+            <h2>Manage Store</h2>
+
+            <div class="admin-option-grid">
+
+                <div class="admin-option">
+                    <h3>📦 Products</h3>
+                    <p>View and manage store products.</p>
+                </div>
+
+                <div class="admin-option">
+                    <h3>👥 Customers</h3>
+                    <p>Manage registered customers.</p>
+                </div>
+
+                <div class="admin-option">
+                    <h3>🛒 Orders</h3>
+                    <p>View customer orders.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="recent-orders">
+            <h2>Recent Demo Order</h2>
+            <div id="recentOrder">
+                <p>No demo order available.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>© 2026 RetailFlow. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../Javascript/admin-dashboard.js"></script>
+
+</body>
+</html>
